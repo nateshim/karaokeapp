@@ -9,7 +9,7 @@ $(function() {
             type: "video",
             q: encodeURIComponent($("#search").val()).replace(/%20/g, "+") + " karaoke",
             maxResults: 1,
-            publishedAfter: "2015-01-01T00:00:00Z"
+            order: "relevance"
        }); 
        // execute the request
        request.execute(function(response) {
