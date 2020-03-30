@@ -14,6 +14,7 @@ $(function() {
        // execute the request
        request.execute(function(response) {
           var results = response.result;
+          console.log(results);
           if (results == " karaoke") {
 
           } else { 
