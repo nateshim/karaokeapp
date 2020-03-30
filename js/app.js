@@ -14,13 +14,17 @@ $(function() {
        // execute the request
        request.execute(function(response) {
           var results = response.result;
-          $("#results").html("");
-          $.each(results.items, function(index, item) {
-            $.get("tpl/item.html", function(data) {
-                $("#results").append(tplawesome(data, [{"title":item.snippet.title, "videoid":item.id.videoId}]));
+          if (results == " karaoke") {
+
+          } else { 
+            $("#results").html("");
+            $.each(results.items, function(index, item) {
+                $.get("tpl/item.html", function(data) {
+                    $("#results").append(tplawesome(data, [{"title":item.snippet.title, "videoid":item.id.videoId}]));
+                });
             });
-          });
-          resetVideoHeight();
+            resetVideoHeight();
+            }
        });
     });
     

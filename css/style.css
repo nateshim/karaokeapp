@@ -9,4 +9,4 @@ form, #results { padding: 0 20px; }
 .w100 { width: 100%; }
 
 .btn-primary { background: #ffffff; border-color: #ffffff; }
-.btn-primary:hover, .btn-primary:active, .btn-primary:focus { background: #ffffff;  border-color: #ffffff; }
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus { background: #000000;  border-color: #000000; }
