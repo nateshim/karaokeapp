@@ -4,7 +4,7 @@ $(function() {
     $("form").on("submit", function(e) {
         e.preventDefault();
         // prepare the request
-        if ($("#search").val() != "") {
+        if ($("#search").val() !== "") {
             var request = gapi.client.youtube.search.list({
                 part: "snippet",
                 type: "video",
