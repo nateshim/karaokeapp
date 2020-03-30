@@ -16,8 +16,6 @@ $(function() {
           var results = response.result;
           console.log(results);
           if (results == " karaoke") {
-
-          } else { 
             $("#results").html("");
             $.each(results.items, function(index, item) {
                 $.get("tpl/item.html", function(data) {
@@ -26,7 +24,9 @@ $(function() {
             });
             resetVideoHeight();
             }
-       });
+          } 
+            
+       );
     });
     
     $(window).on("resize", resetVideoHeight);
